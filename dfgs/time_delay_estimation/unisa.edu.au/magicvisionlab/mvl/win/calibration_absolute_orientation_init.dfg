@@ -4,9 +4,9 @@
         <Input>
             <Node name="A" id="node_16">
                 <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_26">
                 <GuiPos x="931" y="218"/>
@@ -35,9 +35,9 @@
             </Node>
             <Node name="B" id="node_16">
                 <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="Feature" id="node_32">
                 <GuiPos x="481" y="469"/>
@@ -62,7 +62,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="AbsoluteOrientation"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="expansion" value="time" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="480 860" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="520 860" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PoseLinearInterpolation" id="pattern_7">
@@ -94,7 +94,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="PoseLinearInterpolation"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="maxAge" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="690 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="920 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="CastPose2Position" id="pattern_8">
@@ -123,16 +123,16 @@
         </Output>
         <DataflowConfiguration>
             <UbitrackLib class="CastPose2Position"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="610 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="720 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PosePositionMultiplication" id="pattern_10">
         <Input>
             <Node name="A" id="node_16">
                 <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_31">
                 <GuiPos x="59" y="448"/>
@@ -191,9 +191,9 @@
         <Output>
             <Node name="OptiTrack" id="node_16">
                 <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="Body" displayName="Optitrack Marker" id="node_31">
                 <GuiPos x="59" y="448"/>
@@ -247,32 +247,6 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="690 340" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="PosePrintSink" id="pattern_17">
-        <Input>
-            <Node name="A" id="node_16">
-                <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Node>
-            <Node name="B" id="node_26">
-                <GuiPos x="931" y="218"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="deviceName" value="phantom:Default Device" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="threadFrequency" value="200" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="calibrateOnStartup" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="pattern_5" edge-ref="Output">
-                <GuiLandmark x="90" y="92"/>
-                <GuiLabelPos x="110" y="125"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
-        </Input>
-        <DataflowConfiguration>
-            <UbitrackLib class="PosePrintSink"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="690 1030" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-        </DataflowConfiguration>
-    </Pattern>
     <Pattern name="PoseRecorder" id="pattern_18">
         <Input>
             <Node name="A" id="node_26">
@@ -294,16 +268,16 @@
         <DataflowConfiguration>
             <UbitrackLib class="PoseRecorder"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\record\absolute_orientation\haptic_pose.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="920 500" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="460 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PoseRecorder" id="pattern_19">
         <Input>
             <Node name="A" id="node_16">
                 <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_31">
                 <GuiPos x="59" y="448"/>
@@ -327,9 +301,9 @@
         <Input>
             <Node name="A" id="node_16">
                 <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_26">
                 <GuiPos x="931" y="218"/>
@@ -434,9 +408,9 @@
         <Input>
             <Node name="A" id="node_16">
                 <GuiPos x="161" y="70"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_32">
                 <GuiPos x="481" y="469"/>
@@ -470,7 +444,7 @@
             <UbitrackLib class="PositionGate"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="button" value=" " xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="gateType" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="380 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="480 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PoseKeyFrameSignalGenerator" id="pattern_28">
@@ -510,7 +484,35 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="button" value=" " xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="minDistance" value="0.01" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="minTranslation" value="0.01" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="460 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="690 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+        </DataflowConfiguration>
+    </Pattern>
+    <Pattern name="ZMQSinkPose" displayName="net_calib_absolute_orientation" id="net_calib_absolute_orientation">
+        <Input>
+            <Node name="A" id="node_16">
+                <GuiPos x="161" y="70"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="9000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Node>
+            <Node name="B" id="node_26">
+                <GuiPos x="931" y="218"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="deviceName" value="phantom:Default Device" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="threadFrequency" value="200" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="calibrateOnStartup" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Node>
+            <Edge name="Input" source="A" destination="B" pattern-ref="pattern_5" edge-ref="Output">
+                <GuiLandmark x="1152" y="439"/>
+                <GuiLabelPos x="1172" y="472"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+        </Input>
+        <DataflowConfiguration>
+            <UbitrackLib class="ZMQSinkPose"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="socketUrl" value="tcp://127.0.0.1:9977" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="bindTo" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="690 1030" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
 </UTQLResponse>

@@ -57,9 +57,9 @@
     <Pattern name="NatNetPoseTracker">
         <Output>
             <Node name="OptiTrack" id="node_31" displayName="OptiTrack Tracker">
-                <GuiPos x="251" y="20"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <GuiPos x="251" y="30"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
@@ -87,7 +87,7 @@
             <Node name="HIP" id="node_29">
                 <GuiPos x="471" y="469"/>
             </Node>
-            <Node name="HAPIDevice" id="node_32" displayName="A">
+            <Node name="HAPIDevice" id="node_32" displayName="HapticDevice">
                 <GuiPos x="981" y="278"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="deviceName" value="phantom:Default Device" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="threadFrequency" value="200" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -201,7 +201,7 @@
     <Pattern name="PoseMultiplication">
         <Input>
             <Node name="A">
-                <GuiPos x="251" y="20"/>
+                <GuiPos x="251" y="30"/>
                 <Predicate>id=='node_31'</Predicate>
             </Node>
             <Node name="B">
@@ -242,7 +242,7 @@
                 <Predicate>id=='node_32'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="251" y="20"/>
+                <GuiPos x="251" y="30"/>
                 <Predicate>id=='node_31'</Predicate>
             </Node>
             <Node name="C">
@@ -277,7 +277,7 @@
     <Pattern name="PoseInversion">
         <Input>
             <Node name="A">
-                <GuiPos x="251" y="20"/>
+                <GuiPos x="251" y="30"/>
                 <Predicate>id=='node_31'</Predicate>
             </Node>
             <Node name="B">
@@ -305,7 +305,7 @@
     <Pattern name="PoseCalibReader">
         <Output>
             <Node name="A" id="node_31" displayName="OptiTrack Tracker">
-                <GuiPos x="251" y="20"/>
+                <GuiPos x="251" y="30"/>
             </Node>
             <Node name="B" id="node_32" displayName="A">
                 <GuiPos x="981" y="278"/>

@@ -57,10 +57,10 @@
     <Pattern name="NatNetPoseTracker" id="pattern_13">
         <Output>
             <Node name="OptiTrack" id="node_31" displayName="OptiTrack Tracker">
-                <GuiPos x="251" y="20"/>
+                <GuiPos x="251" y="30"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="Body" displayName="Optitrack Marker" id="node_30">
@@ -86,7 +86,7 @@
             <Node name="HIP" id="node_29">
                 <GuiPos x="471" y="469"/>
             </Node>
-            <Node name="HAPIDevice" displayName="A" id="node_32">
+            <Node name="HAPIDevice" displayName="HapticDevice" id="node_32">
                 <GuiPos x="981" y="278"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="deviceName" value="phantom:Default Device" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -200,9 +200,9 @@
     <Pattern name="PoseMultiplication" id="pattern_28">
         <Input>
             <Node name="A" id="node_31">
-                <GuiPos x="251" y="20"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <GuiPos x="251" y="30"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_30">
@@ -246,9 +246,9 @@
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="calibrateOnStartup" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_31">
-                <GuiPos x="251" y="20"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <GuiPos x="251" y="30"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="C" id="node_29">
@@ -283,9 +283,9 @@
     <Pattern name="PoseInversion" id="pattern_32">
         <Input>
             <Node name="A" id="node_31">
-                <GuiPos x="251" y="20"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <GuiPos x="251" y="30"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" id="node_32">
@@ -315,9 +315,9 @@
     <Pattern name="PoseCalibReader" id="pattern_33">
         <Output>
             <Node name="A" displayName="OptiTrack Tracker" id="node_31">
-                <GuiPos x="251" y="20"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="192.168.11.113" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <GuiPos x="251" y="30"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="B" displayName="A" id="node_32">
