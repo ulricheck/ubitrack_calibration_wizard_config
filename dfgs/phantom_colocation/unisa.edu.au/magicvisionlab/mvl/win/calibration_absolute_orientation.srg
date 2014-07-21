@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UTQLRequest name="calibration_absolute_orientation_init" xsi:schemaLocation="http://ar.in.tum.de/ubitrack/utql http://ar.in.tum.de/files/ubitrack/utql/utql_types.xsd" xmlns="http://ar.in.tum.de/ubitrack/utql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<UTQLRequest name="calibration_absolute_orientation" xsi:schemaLocation="http://ar.in.tum.de/ubitrack/utql http://ar.in.tum.de/files/ubitrack/utql/utql_types.xsd" xmlns="http://ar.in.tum.de/ubitrack/utql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Pattern name="PoseLinearInterpolation">
         <Input>
             <Node name="A">
@@ -376,7 +376,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="PosePushCalibReaderWriter"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="690 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\time_delay_estimation\unisa.edu.au\magicvisionlab\mvl\absolute_orientation_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\phantom_colocation\unisa.edu.au\magicvisionlab\mvl\absolute_orientation_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_31" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
