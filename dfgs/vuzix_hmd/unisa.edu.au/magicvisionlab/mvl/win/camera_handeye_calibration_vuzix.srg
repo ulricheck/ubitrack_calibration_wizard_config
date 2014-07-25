@@ -236,8 +236,8 @@
         <Output>
             <Node name="OptiTrack" id="node_29">
                 <GuiPos x="247" y="135"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.98.18" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="serverName" value="10.160.96.22" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="clientName" value="10.160.96.22" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="latency" value="10000000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="Body" id="node_30">
