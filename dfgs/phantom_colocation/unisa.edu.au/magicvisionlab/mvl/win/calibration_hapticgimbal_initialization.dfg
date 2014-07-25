@@ -149,10 +149,10 @@
     </Pattern>
     <Pattern name="PositionCalibReader" id="pattern_26">
         <Output>
-            <Node name="A" displayName="OT HIP" id="node_1">
+            <Node name="A" displayName="HIPtarget" id="node_1">
                 <GuiPos x="186" y="268"/>
             </Node>
-            <Node name="B" displayName="HIP1" id="node_23">
+            <Node name="B" displayName="HIP" id="node_23">
                 <GuiPos x="607" y="670"/>
             </Node>
             <Edge name="Output" source="A" destination="B">
@@ -614,10 +614,10 @@
     </Pattern>
     <Pattern name="ZMQSourcePose" displayName="net_hip_target_pose" id="net_hip_target_pose">
         <Output>
-            <Node name="A" displayName="OptiTrack Tracker" id="node_25">
+            <Node name="A" displayName="ETorigin" id="node_25">
                 <GuiPos x="608" y="10"/>
             </Node>
-            <Node name="B" displayName="OT HIP" id="node_1">
+            <Node name="B" displayName="HIPtarget" id="node_1">
                 <GuiPos x="186" y="268"/>
             </Node>
             <Edge name="Output" source="A" destination="B" displayName="Pose">
@@ -638,10 +638,10 @@
     </Pattern>
     <Pattern name="ZMQSourcePositionList" displayName="net_hip_target_markers" id="net_hip_target_markers">
         <Output>
-            <Node name="A" displayName="OptiTrack Tracker" id="node_25">
+            <Node name="A" displayName="ETorigin" id="node_25">
                 <GuiPos x="608" y="10"/>
             </Node>
-            <Node name="B" displayName="OT HIP" id="node_1">
+            <Node name="B" displayName="HIPtarget" id="node_1">
                 <GuiPos x="186" y="268"/>
             </Node>
             <Edge name="Output" source="A" destination="B" displayName="Markers">
