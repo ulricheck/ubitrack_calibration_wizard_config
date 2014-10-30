@@ -30,7 +30,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_8" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="TimeDelayEstimationPosition3D">
+    <Pattern name="TimeDelayEstimationPosition3D" displayName="haptic_to_external">
         <Input>
             <Node name="A">
                 <GuiPos x="191" y="498"/>
@@ -52,11 +52,11 @@
             </Edge>
         </Input>
         <Output>
-            <Node name="C" id="node_33" displayName="HDtime">
-                <GuiPos x="670" y="0"/>
-            </Node>
             <Node name="D" id="node_34" displayName="ETtime">
                 <GuiPos x="930" y="100"/>
+            </Node>
+            <Node name="C" id="node_33" displayName="HDtime">
+                <GuiPos x="670" y="0"/>
             </Node>
             <Edge name="Output" source="C" destination="D">
                 <GuiLandmark x="816" y="62"/>
@@ -68,7 +68,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="TimeDelayEstimationPosition3D"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="120 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_23" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="haptic_to_external" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PoseMultiplication">
@@ -292,17 +292,17 @@
                 <Predicate>id=='node_34'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
-                <Predicate>trackman-pattern-ref=='pattern_23'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Distance'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='haptic_to_external'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Distance'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
-            <Edge name="OutputPull" source="A" destination="B">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="Output" source="A" destination="B">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+            <Edge name="OutputPull" source="A" destination="B">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Output>
         <DataflowConfiguration>
@@ -360,7 +360,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_37" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="TimeDelayEstimationPosition3D">
+    <Pattern name="TimeDelayEstimationPosition3D" displayName="haptic_to_reference">
         <Input>
             <Node name="A">
                 <GuiPos x="191" y="498"/>
@@ -380,11 +380,11 @@
             </Edge>
         </Input>
         <Output>
-            <Node name="C" id="node_44" displayName="HDtime">
-                <GuiPos x="276" y="0"/>
-            </Node>
             <Node name="D" id="node_45" displayName="REFtime">
                 <GuiPos x="456" y="148"/>
+            </Node>
+            <Node name="C" id="node_44" displayName="HDtime">
+                <GuiPos x="276" y="0"/>
             </Node>
             <Edge name="Output" source="C" destination="D">
                 <GuiLandmark x="451" y="54"/>
@@ -396,7 +396,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="TimeDelayEstimationPosition3D"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="580 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_40" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="haptic_to_reference" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="ZMQSourcePose" displayName="net_hip_pose_faro">
@@ -551,17 +551,17 @@
                 <Predicate>id=='node_45'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
-                <Predicate>trackman-pattern-ref=='pattern_40'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Distance'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='haptic_to_reference'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Distance'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
-            <Edge name="OutputPull" source="A" destination="B">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="Output" source="A" destination="B">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+            <Edge name="OutputPull" source="A" destination="B">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Output>
         <DataflowConfiguration>
@@ -597,7 +597,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_calib_delay_haptic_to_reference" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="TimeDelayEstimationPosition3D">
+    <Pattern name="TimeDelayEstimationPosition3D" displayName="reference_to_external">
         <Input>
             <Node name="A">
                 <GuiPos x="191" y="498"/>
@@ -615,11 +615,11 @@
             </Edge>
         </Input>
         <Output>
-            <Node name="C" id="node_46" displayName="REFtime">
-                <GuiPos x="26" y="17"/>
-            </Node>
             <Node name="D" id="node_47" displayName="ETtime">
                 <GuiPos x="156" y="337"/>
+            </Node>
+            <Node name="C" id="node_46" displayName="REFtime">
+                <GuiPos x="26" y="17"/>
             </Node>
             <Edge name="Output" source="C" destination="D">
                 <GuiLandmark x="182" y="89"/>
@@ -631,7 +631,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="TimeDelayEstimationPosition3D"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="350 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_48" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="reference_to_external" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="DistancePushCalibReaderWriter">
@@ -645,17 +645,17 @@
                 <Predicate>id=='node_47'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
-                <Predicate>trackman-pattern-ref=='pattern_48'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Distance'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='reference_to_external'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Distance'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
-            <Edge name="OutputPull" source="A" destination="B">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="Output" source="A" destination="B">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+            <Edge name="OutputPull" source="A" destination="B">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Distance" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Output>
         <DataflowConfiguration>
