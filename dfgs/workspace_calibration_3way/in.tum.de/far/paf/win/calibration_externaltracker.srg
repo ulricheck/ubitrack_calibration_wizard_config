@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UTQLRequest name="ismar14_calibration" xsi:schemaLocation="http://ar.in.tum.de/ubitrack/utql http://ar.in.tum.de/files/ubitrack/utql/utql_types.xsd" xmlns="http://ar.in.tum.de/ubitrack/utql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<UTQLRequest name="calibration_externaltracker" xsi:schemaLocation="http://ar.in.tum.de/ubitrack/utql http://ar.in.tum.de/files/ubitrack/utql/utql_types.xsd" xmlns="http://ar.in.tum.de/ubitrack/utql" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Pattern name="ApplicationPullSourcePositionList">
         <Output>
             <Node name="A" id="node_2" displayName="HDorigin">
