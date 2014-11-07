@@ -415,7 +415,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="1500 340" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSinkPose" displayName="net_calib_absolute_orientation" id="net_calib_absolute_orientation">
+    <Pattern name="ZMQSinkPose" displayName="net_calib_ao_externaltracker_phantom" id="net_calib_ao_externaltracker_phantom">
         <Input>
             <Node name="A" id="node_14">
                 <GuiPos x="411" y="288"/>

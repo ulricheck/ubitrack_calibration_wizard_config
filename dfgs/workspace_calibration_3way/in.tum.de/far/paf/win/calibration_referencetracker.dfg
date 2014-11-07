@@ -183,7 +183,7 @@
     </Pattern>
     <Pattern name="ApplicationPushSourcePositionList" id="ao_calib_et_positions">
         <Output>
-            <Node name="A" displayName="ETorigin" id="node_14">
+            <Node name="A" displayName="REForigin" id="node_14">
                 <GuiPos x="411" y="288"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
@@ -235,7 +235,7 @@
             <Node name="A" displayName="ETorigin" id="node_14">
                 <GuiPos x="411" y="288"/>
             </Node>
-            <Node name="B" displayName="ETtarget" id="node_15">
+            <Node name="B" displayName="REFtarget" id="node_15">
                 <GuiPos x="181" y="618"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>

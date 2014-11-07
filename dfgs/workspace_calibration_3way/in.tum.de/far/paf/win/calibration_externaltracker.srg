@@ -436,7 +436,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="calib_phantom_gimbalangle_correction_out" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSinkPose" displayName="net_calib_absolute_orientation">
+    <Pattern name="ZMQSinkPose" displayName="net_calib_ao_externaltracker_phantom">
         <Input>
             <Node name="A">
                 <GuiPos x="411" y="288"/>
@@ -459,7 +459,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="bindTo" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="fixTimestamp" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="verbose" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_calib_absolute_orientation" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_calib_ao_externaltracker_phantom" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PosePushCalibReaderWriter">
