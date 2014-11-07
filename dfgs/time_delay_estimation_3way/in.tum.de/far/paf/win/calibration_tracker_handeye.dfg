@@ -47,17 +47,17 @@
     </Pattern>
     <Pattern name="HECalibration" id="pattern_25">
         <Input>
-            <Node name="Eye" id="node_23">
-                <GuiPos x="426" y="312"/>
-            </Node>
-            <Node name="Object" id="node_22">
-                <GuiPos x="716" y="512"/>
-            </Node>
             <Node name="Robot" id="node_24">
                 <GuiPos x="0" y="0"/>
             </Node>
+            <Node name="Eye" id="node_23">
+                <GuiPos x="426" y="312"/>
+            </Node>
             <Node name="Hand" id="node_25">
                 <GuiPos x="250" y="170"/>
+            </Node>
+            <Node name="Object" id="node_22">
+                <GuiPos x="716" y="512"/>
             </Node>
             <Edge name="ObjectPose" source="Eye" destination="Object" pattern-ref="pattern_26" edge-ref="BA">
                 <GuiLandmark x="966" y="588"/>
@@ -188,17 +188,17 @@
             </Edge>
         </Input>
         <Output>
-            <Edge name="OutputPull" source="A" destination="B">
-                <GuiLandmark x="566" y="183"/>
-                <GuiLabelPos x="579" y="219"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="Output" source="A" destination="B">
                 <GuiLandmark x="635" y="142"/>
                 <GuiLabelPos x="660" y="170"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+            <Edge name="OutputPull" source="A" destination="B">
+                <GuiLandmark x="566" y="183"/>
+                <GuiLabelPos x="579" y="219"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Output>
         <DataflowConfiguration>

@@ -50,21 +50,21 @@
     </Pattern>
     <Pattern name="HECalibration">
         <Input>
-            <Node name="Eye">
-                <GuiPos x="426" y="312"/>
-                <Predicate>id=='node_23'</Predicate>
-            </Node>
-            <Node name="Object">
-                <GuiPos x="716" y="512"/>
-                <Predicate>id=='node_22'</Predicate>
-            </Node>
             <Node name="Robot">
                 <GuiPos x="0" y="0"/>
                 <Predicate>id=='node_24'</Predicate>
             </Node>
+            <Node name="Eye">
+                <GuiPos x="426" y="312"/>
+                <Predicate>id=='node_23'</Predicate>
+            </Node>
             <Node name="Hand">
                 <GuiPos x="250" y="170"/>
                 <Predicate>id=='node_25'</Predicate>
+            </Node>
+            <Node name="Object">
+                <GuiPos x="716" y="512"/>
+                <Predicate>id=='node_22'</Predicate>
             </Node>
             <Edge name="ObjectPose" source="Eye" destination="Object">
                 <GuiLandmark x="966" y="588"/>
@@ -201,17 +201,17 @@
             </Edge>
         </Input>
         <Output>
-            <Edge name="OutputPull" source="A" destination="B">
-                <GuiLandmark x="566" y="183"/>
-                <GuiLabelPos x="579" y="219"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="Output" source="A" destination="B">
                 <GuiLandmark x="635" y="142"/>
                 <GuiLabelPos x="660" y="170"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+            <Edge name="OutputPull" source="A" destination="B">
+                <GuiLandmark x="566" y="183"/>
+                <GuiLabelPos x="579" y="219"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Output>
         <DataflowConfiguration>

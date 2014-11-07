@@ -235,11 +235,11 @@
             </Edge>
         </Input>
         <Output>
-            <Node name="C" id="node_37">
-                <GuiPos x="112" y="84"/>
-            </Node>
             <Node name="D" id="node_36">
                 <GuiPos x="40" y="354"/>
+            </Node>
+            <Node name="C" id="node_37">
+                <GuiPos x="112" y="84"/>
             </Node>
             <Edge name="Output" source="C" destination="D">
                 <GuiLandmark x="142" y="182"/>
@@ -264,17 +264,17 @@
             <Node name="HapticDevice" id="node_27">
                 <GuiPos x="1039" y="117"/>
             </Node>
-            <Edge name="TrackedPosition" source="HapticDevice" destination="HapticStylus" pattern-ref="pattern_75" edge-ref="AB-Interpolated">
-                <GuiLandmark x="911" y="128"/>
-                <GuiLabelPos x="694" y="296"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="JointAngles" source="HapticDevice" destination="HapticStylus" pattern-ref="pattern_63" edge-ref="Output">
                 <GuiLandmark x="1186" y="291"/>
                 <GuiLabelPos x="1141" y="562"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+            <Edge name="TrackedPosition" source="HapticDevice" destination="HapticStylus" pattern-ref="pattern_75" edge-ref="AB-Interpolated">
+                <GuiLandmark x="911" y="128"/>
+                <GuiLabelPos x="694" y="296"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Input>
         <Output>
@@ -457,19 +457,19 @@
             </Edge>
         </Input>
         <Output>
-            <Edge name="OutputPull" source="A" destination="B">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3x3Matrix" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="Output" source="A" destination="B">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3x3Matrix" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
+            <Edge name="OutputPull" source="A" destination="B">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3x3Matrix" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
         </Output>
         <DataflowConfiguration>
             <UbitrackLib class="Matrix3x3PushCalibReaderWriter"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="C:\HapticCalib\vharCalibration\calib\ismar14\in.tum.de\far\paf\phantom_jointangle_correction.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="80 1030" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="C:\HapticCalib\vharCalibration\calib\workspace_calibration_3way\in.tum.de\far\paf\phantom_jointangle_correction.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="80 1020" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PosePositionMultiplication" id="pattern_80">
@@ -660,7 +660,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="1850 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_hip_pose_faro" id="pattern_86">
+    <Pattern name="ZMQSourcePose" displayName="net_hip_pose_faro" id="net_hip_pose_faro">
         <Output>
             <Node name="A" displayName="Reference" id="node_38">
                 <GuiPos x="1554" y="274"/>
@@ -710,15 +710,15 @@
             <Node name="HapticDevice" id="node_27">
                 <GuiPos x="1039" y="117"/>
             </Node>
-            <Edge name="TrackedPosition" source="HapticDevice" destination="HapticStylus" pattern-ref="pattern_94" edge-ref="AB-Interpolated">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="JointAngles" source="HapticDevice" destination="HapticStylus" pattern-ref="pattern_63" edge-ref="Output">
                 <GuiLandmark x="1348" y="630"/>
                 <GuiLabelPos x="1276" y="691"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+            <Edge name="TrackedPosition" source="HapticDevice" destination="HapticStylus" pattern-ref="pattern_94" edge-ref="AB-Interpolated">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Input>
         <Output>
@@ -777,18 +777,18 @@
             </Edge>
         </Input>
         <Output>
-            <Edge name="OutputPull" source="A" destination="B">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3x3Matrix" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
             <Edge name="Output" source="A" destination="B">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3x3Matrix" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
+            <Edge name="OutputPull" source="A" destination="B">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3x3Matrix" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
         </Output>
         <DataflowConfiguration>
             <UbitrackLib class="Matrix3x3PushCalibReaderWriter"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="C:\HapticCalib\vharCalibration\calib\workspace_calibration_3way\in.tum.de\far\paf\phantom_jointangle_ref_correction.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="C:\HapticCalib\vharCalibration\calib\workspace_calibration_3way\in.tum.de\far\paf\phantom_jointangle_correction_ref.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="890 1030" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -871,7 +871,7 @@
             <Node name="B" id="HIP">
                 <GuiPos x="697" y="692"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="pattern_86" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_hip_pose_faro" edge-ref="Output">
                 <GuiLandmark x="1380" y="610"/>
                 <GuiLabelPos x="1400" y="642"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -960,7 +960,7 @@
             <Node name="B" id="HIP">
                 <GuiPos x="697" y="692"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="pattern_86" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_hip_pose_faro" edge-ref="Output">
                 <GuiLandmark x="1543" y="579"/>
                 <GuiLabelPos x="1563" y="611"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
