@@ -13,7 +13,7 @@
             <Edge name="Input" source="A" destination="B">
                 <GuiLandmark x="741" y="319"/>
                 <GuiLabelPos x="761" y="352"/>
-                <Predicate>trackman-pattern-ref=='net_hip_target_pose_raw'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='net_hip_target_pose_raw_ref'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <DataflowConfiguration>
@@ -23,7 +23,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_17" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_hip_target_pose_raw">
+    <Pattern name="ZMQSourcePose" displayName="net_hip_target_pose_raw_ref">
         <Output>
             <Node name="A" id="node_20" displayName="ETorigin">
                 <GuiPos x="116" y="62"/>
@@ -47,7 +47,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="bindTo" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="fixTimestamp" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="verbose" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_hip_target_pose_raw" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_hip_target_pose_raw_ref" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PoseRecorder">
@@ -243,9 +243,8 @@
             <Node name="A" id="node_24" displayName="RefBase">
                 <GuiPos x="1126" y="95"/>
             </Node>
-            <Node name="B" id="node_29" displayName="RefTarget">
-                <GuiPos x="970" y="310"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Node name="B" id="node_34" displayName="RefTarget">
+                <GuiPos x="1000" y="330"/>
             </Node>
             <Edge name="Output" source="A" destination="B">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -269,8 +268,8 @@
                 <Predicate>id=='node_24'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="970" y="310"/>
-                <Predicate>id=='node_29'</Predicate>
+                <GuiPos x="1000" y="330"/>
+                <Predicate>id=='node_34'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
                 <GuiLandmark x="1021" y="480"/>
@@ -296,17 +295,19 @@
                 <Predicate>id=='node_21'</Predicate>
             </Node>
             <Edge name="Input" source="Tracker" destination="Marker">
-                <Predicate>trackman-pattern-ref=='net_hip_target_pose_raw'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='net_hip_target_pose_raw_ref'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
-            <Node name="Tip" id="node_32" displayName="HIPposeET">
-                <GuiPos x="280" y="560"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Node name="Tip" id="node_33" displayName="HIPposeET">
+                <GuiPos x="310" y="580"/>
             </Node>
+            <Edge name="OutputPose" source="Marker" destination="Tip">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
             <Edge name="Output" source="Marker" destination="Tip">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Output>
         <DataflowConfiguration>
@@ -323,21 +324,23 @@
                 <Predicate>id=='node_24'</Predicate>
             </Node>
             <Node name="Marker">
-                <GuiPos x="970" y="310"/>
-                <Predicate>id=='node_29'</Predicate>
+                <GuiPos x="1000" y="330"/>
+                <Predicate>id=='node_34'</Predicate>
             </Node>
             <Edge name="Input" source="Tracker" destination="Marker">
                 <Predicate>trackman-pattern-ref=='net_hip_pose_faro_raw'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
-            <Node name="Tip" id="node_31" displayName="HIPposeREF">
-                <GuiPos x="1120" y="560"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Node name="Tip" id="node_35" displayName="HIPposeREF">
+                <GuiPos x="1150" y="580"/>
             </Node>
+            <Edge name="OutputPose" source="Marker" destination="Tip">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
             <Edge name="Output" source="Marker" destination="Tip">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Edge>
         </Output>
         <DataflowConfiguration>
@@ -347,112 +350,6 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_32" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="StaticRotation">
-        <Output>
-            <Node name="A" id="node_29">
-                <GuiPos x="970" y="310"/>
-            </Node>
-            <Node name="B" id="node_31" displayName="Tip">
-                <GuiPos x="1120" y="560"/>
-            </Node>
-            <Edge name="AB" source="A" destination="B">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="staticRotation" value="0.0  0.0  0.0  1.0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DRotation" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
-        </Output>
-        <DataflowConfiguration>
-            <UbitrackLib class="StaticRotation"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="2070 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_33" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-        </DataflowConfiguration>
-    </Pattern>
-    <Pattern name="StaticRotation">
-        <Output>
-            <Node name="A" id="node_21" displayName="HIPtarget">
-                <GuiPos x="146" y="392"/>
-            </Node>
-            <Node name="B" id="node_32" displayName="Tip">
-                <GuiPos x="280" y="560"/>
-            </Node>
-            <Edge name="AB" source="A" destination="B">
-                <GuiLandmark x="752" y="73"/>
-                <GuiLabelPos x="795" y="95"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="staticRotation" value="0.0  0.0  0.0  1.0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DRotation" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="pull" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
-        </Output>
-        <DataflowConfiguration>
-            <UbitrackLib class="StaticRotation"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="460 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_34" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-        </DataflowConfiguration>
-    </Pattern>
-    <Pattern name="FunctionalFusion">
-        <Input>
-            <Node name="A">
-                <GuiPos x="146" y="392"/>
-                <Predicate>id=='node_21'</Predicate>
-            </Node>
-            <Node name="B">
-                <GuiPos x="280" y="560"/>
-                <Predicate>id=='node_32'</Predicate>
-            </Node>
-            <Edge name="PositionInput" source="A" destination="B">
-                <GuiLandmark x="1130" y="132"/>
-                <GuiLabelPos x="1150" y="165"/>
-                <Predicate>trackman-pattern-ref=='pattern_31'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='3DPosition'&amp;&amp;mode=='push'</Predicate>
-            </Edge>
-            <Edge name="RotationInput" source="A" destination="B">
-                <GuiLandmark x="1096" y="153"/>
-                <GuiLabelPos x="1109" y="189"/>
-                <Predicate>trackman-pattern-ref=='pattern_34'&amp;&amp;trackman-edge-ref=='AB'&amp;&amp;type=='3DRotation'&amp;&amp;mode=='pull'</Predicate>
-            </Edge>
-        </Input>
-        <Output>
-            <Edge name="Output" source="A" destination="B">
-                <GuiLandmark x="1165" y="112"/>
-                <GuiLabelPos x="1190" y="140"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
-        </Output>
-        <DataflowConfiguration>
-            <UbitrackLib class="FunctionalFusion"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="230 340" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_35" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-        </DataflowConfiguration>
-    </Pattern>
-    <Pattern name="FunctionalFusion">
-        <Input>
-            <Node name="A">
-                <GuiPos x="970" y="310"/>
-                <Predicate>id=='node_29'</Predicate>
-            </Node>
-            <Node name="B">
-                <GuiPos x="1120" y="560"/>
-                <Predicate>id=='node_31'</Predicate>
-            </Node>
-            <Edge name="PositionInput" source="A" destination="B">
-                <Predicate>trackman-pattern-ref=='pattern_32'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='3DPosition'&amp;&amp;mode=='push'</Predicate>
-            </Edge>
-            <Edge name="RotationInput" source="A" destination="B">
-                <Predicate>trackman-pattern-ref=='pattern_33'&amp;&amp;trackman-edge-ref=='AB'&amp;&amp;type=='3DRotation'&amp;&amp;mode=='pull'</Predicate>
-            </Edge>
-        </Input>
-        <Output>
-            <Edge name="Output" source="A" destination="B">
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            </Edge>
-        </Output>
-        <DataflowConfiguration>
-            <UbitrackLib class="FunctionalFusion"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="1950 340" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_36" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-        </DataflowConfiguration>
-    </Pattern>
     <Pattern name="PosePushCalibReaderWriter">
         <Input>
             <Node name="A">
@@ -460,11 +357,11 @@
                 <Predicate>id=='node_21'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="280" y="560"/>
-                <Predicate>id=='node_32'</Predicate>
+                <GuiPos x="310" y="580"/>
+                <Predicate>id=='node_33'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
-                <Predicate>trackman-pattern-ref=='pattern_35'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='pattern_31'&amp;&amp;trackman-edge-ref=='OutputPose'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
@@ -487,15 +384,15 @@
     <Pattern name="PosePushCalibReaderWriter">
         <Input>
             <Node name="A">
-                <GuiPos x="970" y="310"/>
-                <Predicate>id=='node_29'</Predicate>
+                <GuiPos x="1000" y="330"/>
+                <Predicate>id=='node_34'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="1120" y="560"/>
-                <Predicate>id=='node_31'</Predicate>
+                <GuiPos x="1150" y="580"/>
+                <Predicate>id=='node_35'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
-                <Predicate>trackman-pattern-ref=='pattern_36'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='pattern_32'&amp;&amp;trackman-edge-ref=='OutputPose'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
@@ -518,12 +415,12 @@
     <Pattern name="ZMQSinkPose" displayName="net_calib_tooltip_faro">
         <Input>
             <Node name="A">
-                <GuiPos x="970" y="310"/>
-                <Predicate>id=='node_29'</Predicate>
+                <GuiPos x="1000" y="330"/>
+                <Predicate>id=='node_34'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="1120" y="560"/>
-                <Predicate>id=='node_31'</Predicate>
+                <GuiPos x="1150" y="580"/>
+                <Predicate>id=='node_35'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
                 <GuiLandmark x="1240" y="272"/>
@@ -548,8 +445,8 @@
                 <Predicate>id=='node_21'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="280" y="560"/>
-                <Predicate>id=='node_32'</Predicate>
+                <GuiPos x="310" y="580"/>
+                <Predicate>id=='node_33'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
                 <Predicate>trackman-pattern-ref=='pattern_37'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
