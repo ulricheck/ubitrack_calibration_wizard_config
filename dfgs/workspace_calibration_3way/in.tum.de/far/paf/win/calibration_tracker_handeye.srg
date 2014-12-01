@@ -7,7 +7,7 @@
                 <Predicate>id=='node_22'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="426" y="312"/>
+                <GuiPos x="646" y="202"/>
                 <Predicate>id=='node_23'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
@@ -29,7 +29,7 @@
                 <GuiPos x="716" y="512"/>
             </Node>
             <Node name="B" id="node_23" displayName="HIPtarget">
-                <GuiPos x="426" y="312"/>
+                <GuiPos x="646" y="202"/>
             </Node>
             <Edge name="Output" source="A" destination="B" displayName="HIPtarget">
                 <GuiLandmark x="213" y="194"/>
@@ -53,8 +53,8 @@
             <Node name="A" id="node_24" displayName="REForigin">
                 <GuiPos x="0" y="0"/>
             </Node>
-            <Node name="B" id="node_25">
-                <GuiPos x="250" y="170"/>
+            <Node name="B" id="node_25" displayName="RefTip">
+                <GuiPos x="360" y="100"/>
             </Node>
             <Edge name="Output" source="A" destination="B">
                 <GuiLandmark x="90" y="92"/>
@@ -80,7 +80,7 @@
                 <Predicate>id=='node_24'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="250" y="170"/>
+                <GuiPos x="360" y="100"/>
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Node name="Event">
@@ -119,11 +119,11 @@
     <Pattern name="PosePushCalibReaderWriter">
         <Input>
             <Node name="A">
-                <GuiPos x="426" y="312"/>
+                <GuiPos x="646" y="202"/>
                 <Predicate>id=='node_23'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="250" y="170"/>
+                <GuiPos x="360" y="100"/>
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
@@ -160,7 +160,7 @@
                 <Predicate>id=='node_24'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="250" y="170"/>
+                <GuiPos x="360" y="100"/>
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
@@ -179,11 +179,11 @@
     <Pattern name="ZMQSinkPose" displayName="net_calib_tracker_handeye">
         <Input>
             <Node name="A">
-                <GuiPos x="426" y="312"/>
+                <GuiPos x="646" y="202"/>
                 <Predicate>id=='node_23'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="250" y="170"/>
+                <GuiPos x="360" y="100"/>
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
@@ -226,11 +226,11 @@
     <Pattern name="ApplicationPullSinkPose">
         <Input>
             <Node name="A">
-                <GuiPos x="426" y="312"/>
+                <GuiPos x="646" y="202"/>
                 <Predicate>id=='node_23'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="250" y="170"/>
+                <GuiPos x="360" y="100"/>
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
@@ -252,7 +252,7 @@
                 <Predicate>id=='node_22'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="426" y="312"/>
+                <GuiPos x="646" y="202"/>
                 <Predicate>id=='node_23'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
@@ -283,11 +283,11 @@
                 <Predicate>id=='node_22'</Predicate>
             </Node>
             <Node name="Eye">
-                <GuiPos x="250" y="170"/>
+                <GuiPos x="360" y="100"/>
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Node name="Hand">
-                <GuiPos x="426" y="312"/>
+                <GuiPos x="646" y="202"/>
                 <Predicate>id=='node_23'</Predicate>
             </Node>
             <Node name="Object">
@@ -325,7 +325,7 @@
                 <Predicate>id=='node_24'</Predicate>
             </Node>
             <Node name="B">
-                <GuiPos x="250" y="170"/>
+                <GuiPos x="360" y="100"/>
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Edge name="AB" source="A" destination="B">
@@ -346,6 +346,71 @@
             <UbitrackLib class="PoseInversion"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="230 440" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_26" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+        </DataflowConfiguration>
+    </Pattern>
+    <Pattern name="HECalibration">
+        <Input>
+            <Node name="Robot">
+                <GuiPos x="360" y="100"/>
+                <Predicate>id=='node_25'</Predicate>
+            </Node>
+            <Node name="Eye">
+                <GuiPos x="716" y="512"/>
+                <Predicate>id=='node_22'</Predicate>
+            </Node>
+            <Node name="Hand">
+                <GuiPos x="0" y="0"/>
+                <Predicate>id=='node_24'</Predicate>
+            </Node>
+            <Node name="Object">
+                <GuiPos x="646" y="202"/>
+                <Predicate>id=='node_23'</Predicate>
+            </Node>
+            <Edge name="ObjectPose" source="Eye" destination="Object">
+                <GuiLandmark x="561" y="507"/>
+                <GuiLabelPos x="546" y="432"/>
+                <Predicate>trackman-pattern-ref=='pattern_32'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='pull'</Predicate>
+            </Edge>
+            <Edge name="HandPose" source="Robot" destination="Hand">
+                <GuiLandmark x="256" y="182"/>
+                <GuiLabelPos x="203" y="176"/>
+                <Predicate>trackman-pattern-ref=='pattern_26'&amp;&amp;trackman-edge-ref=='BA'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+            </Edge>
+        </Input>
+        <Output>
+            <Edge name="Output" source="Hand" destination="Eye">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+        </Output>
+        <DataflowConfiguration>
+            <UbitrackLib class="HECalibration"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="700 590" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="expansion" value="time" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_33" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+        </DataflowConfiguration>
+    </Pattern>
+    <Pattern name="PoseCalibWriter">
+        <Input>
+            <Node name="A">
+                <GuiPos x="0" y="0"/>
+                <Predicate>id=='node_24'</Predicate>
+            </Node>
+            <Node name="B">
+                <GuiPos x="716" y="512"/>
+                <Predicate>id=='node_22'</Predicate>
+            </Node>
+            <Edge name="Input" source="A" destination="B">
+                <GuiLandmark x="224" y="405"/>
+                <GuiLabelPos x="244" y="438"/>
+                <Predicate>trackman-pattern-ref=='pattern_33'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+            </Edge>
+        </Input>
+        <DataflowConfiguration>
+            <UbitrackLib class="PoseCalibWriter"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="800 750" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="C:\HapticCalib\vharCalibration\calib\workspace_calibration_3way\in.tum.de\far\paf\absolute_orientation_calibration_ref2et.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_34" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
 </UTQLRequest>
