@@ -545,7 +545,7 @@
     </Pattern>
     <Pattern name="ZMQSourcePositionList" displayName="net_hip_target_markers">
         <Output>
-            <Node name="A" id="node_39" displayName="OptiTrack Tracker">
+            <Node name="A" id="node_39" displayName="ETorigin">
                 <GuiPos x="221" y="110"/>
             </Node>
             <Node name="B" id="node_31" displayName="HIPtarget">
