@@ -84,12 +84,12 @@
                 <Predicate>id=='node_25'</Predicate>
             </Node>
             <Node name="Event">
-                <GuiPos x="928" y="87"/>
-                <Predicate>id=='node_32'</Predicate>
+                <GuiPos x="949" y="102"/>
+                <Predicate>id=='node_35'</Predicate>
             </Node>
             <Node name="EventSpace">
-                <GuiPos x="1048" y="287"/>
-                <Predicate>id=='node_33'</Predicate>
+                <GuiPos x="1089" y="302"/>
+                <Predicate>id=='node_34'</Predicate>
             </Node>
             <Edge name="Input" source="A" destination="B">
                 <Predicate>trackman-pattern-ref=='net_hip_pose_faro_raw'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
@@ -97,7 +97,7 @@
             <Edge name="Signal" source="Event" destination="EventSpace">
                 <GuiLandmark x="984" y="200"/>
                 <GuiLabelPos x="997" y="236"/>
-                <Predicate>trackman-pattern-ref=='capture_pose'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Button'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='faro_green_button'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Button'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
@@ -205,10 +205,10 @@
     <Pattern name="ApplicationPushSourceButton">
         <Output>
             <Node name="A" id="node_32">
-                <GuiPos x="928" y="87"/>
+                <GuiPos x="1098" y="87"/>
             </Node>
             <Node name="B" id="node_33">
-                <GuiPos x="1048" y="287"/>
+                <GuiPos x="1408" y="317"/>
             </Node>
             <Edge name="Output" source="A" destination="B">
                 <GuiLandmark x="1018" y="179"/>
@@ -411,6 +411,28 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="800 750" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="C:\HapticCalib\vharCalibration\calib\workspace_calibration_3way\in.tum.de\far\paf\absolute_orientation_calibration_ref2et.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_34" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+        </DataflowConfiguration>
+    </Pattern>
+    <Pattern name="NetworkSourceEvent">
+        <Output>
+            <Node name="A" id="node_35">
+                <GuiPos x="949" y="102"/>
+            </Node>
+            <Node name="B" id="node_34">
+                <GuiPos x="1089" y="302"/>
+            </Node>
+            <Edge name="Output" source="A" destination="B">
+                <GuiLandmark x="1012" y="215"/>
+                <GuiLabelPos x="1029" y="254"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Button" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+        </Output>
+        <DataflowConfiguration>
+            <UbitrackLib class="NetworkSourceEvent"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="1060 10" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="networkPort" value="21844" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="faro_green_button" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
 </UTQLRequest>
