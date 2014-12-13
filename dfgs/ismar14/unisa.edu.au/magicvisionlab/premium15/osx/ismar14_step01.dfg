@@ -52,7 +52,7 @@
         </Input>
         <DataflowConfiguration>
             <UbitrackLib class="PoseRecorder"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration_vhardata_mvl/ismar14_step01/externaltracker_hiptarget_pose.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration_vhardata_mvl/ismar14_step01/externaltracker_hiptarget_pose.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="230 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -73,7 +73,7 @@
         </Input>
         <DataflowConfiguration>
             <UbitrackLib class="PositionRecorder"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration_vhardata_mvl/ismar14_step01/tipcalibration_output.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration_vhardata_mvl/ismar14_step01/tipcalibration_output.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="250 850" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -236,7 +236,7 @@
         </Output>
         <DataflowConfiguration>
             <UbitrackLib class="PositionPushCalibReaderWriter"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration/calib/ismar14/unisa.edu.au/magicvisionlab/mvl/tooltip_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration/calib/ismar14/unisa.edu.au/magicvisionlab/mvl/tooltip_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="20 850" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -301,7 +301,7 @@
         </Input>
         <DataflowConfiguration>
             <UbitrackLib class="PoseRecorder"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration_vhardata_mvl/ismar14_step01/phantom_fwk_pose.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration_vhardata_mvl/ismar14_step01/phantom_fwk_pose.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="1180 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -322,7 +322,7 @@
         </Input>
         <DataflowConfiguration>
             <UbitrackLib class="PositionRecorder"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration_vhardata_mvl/ismar14_step01/phantom_joint_angles.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration_vhardata_mvl/ismar14_step01/phantom_joint_angles.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="720 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -343,7 +343,7 @@
         </Input>
         <DataflowConfiguration>
             <UbitrackLib class="PositionRecorder"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration_vhardata_mvl/ismar14_step01/phantom_gimbal_angles.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration_vhardata_mvl/ismar14_step01/phantom_gimbal_angles.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="950 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -364,7 +364,7 @@
         </Input>
         <DataflowConfiguration>
             <UbitrackLib class="PositionListRecorder"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration_vhardata_mvl/ismar14_step01/externaltracker_hiptarget_markers.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration_vhardata_mvl/ismar14_step01/externaltracker_hiptarget_markers.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="490 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>

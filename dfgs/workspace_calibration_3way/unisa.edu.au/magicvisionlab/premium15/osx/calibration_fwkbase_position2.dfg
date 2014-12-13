@@ -118,7 +118,7 @@
         </Output>
         <DataflowConfiguration>
             <UbitrackLib class="PositionPushCalibReaderWriter"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration/calib/workspace_calibration_3way/in.tum.de/far/paf/phantom_fwkbase_position2_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration/calib/workspace_calibration_3way/in.tum.de/far/paf/phantom_fwkbase_position2_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="180 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -161,7 +161,7 @@
         </Input>
         <DataflowConfiguration>
             <UbitrackLib class="PoseRecorder"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/ismar14/vharcalibration_vhardata_mvl/fwkbase_position2/fwkbase_target2_pose.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration_vhardata_mvl/fwkbase_position2/fwkbase_target2_pose.log" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="130 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
