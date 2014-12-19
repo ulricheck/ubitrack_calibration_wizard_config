@@ -269,28 +269,6 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="tt_calib_et_pose" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ApplicationPushSinkPosition">
-        <Input>
-            <Node name="A">
-                <GuiPos x="181" y="618"/>
-                <Predicate>id=='node_15'</Predicate>
-            </Node>
-            <Node name="B">
-                <GuiPos x="727" y="722"/>
-                <Predicate>id=='node_4'</Predicate>
-            </Node>
-            <Edge name="Input" source="A" destination="B">
-                <GuiLandmark x="231" y="669"/>
-                <GuiLabelPos x="251" y="702"/>
-                <Predicate>trackman-pattern-ref=='pattern_53'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='3DPosition'&amp;&amp;mode=='push'</Predicate>
-            </Edge>
-        </Input>
-        <DataflowConfiguration>
-            <UbitrackLib class="ApplicationPushSinkPosition"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="920 340" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="calib_tooltip_out" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-        </DataflowConfiguration>
-    </Pattern>
     <Pattern name="PhantomWorkspaceGimbalCalibrationSpace">
         <Input>
             <Node name="HapticStylus">
@@ -918,6 +896,26 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="fixTimestamp" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="verbose" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_calib_tooltip" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+        </DataflowConfiguration>
+    </Pattern>
+    <Pattern name="ApplicationPushSinkPose">
+        <Input>
+            <Node name="A">
+                <GuiPos x="181" y="618"/>
+                <Predicate>id=='node_15'</Predicate>
+            </Node>
+            <Node name="B">
+                <GuiPos x="727" y="722"/>
+                <Predicate>id=='node_4'</Predicate>
+            </Node>
+            <Edge name="Input" source="A" destination="B">
+                <Predicate>trackman-pattern-ref=='pattern_53'&amp;&amp;trackman-edge-ref=='OutputPose'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+            </Edge>
+        </Input>
+        <DataflowConfiguration>
+            <UbitrackLib class="ApplicationPushSinkPose"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="887 341" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="calib_tooltip_out" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
 </UTQLRequest>
