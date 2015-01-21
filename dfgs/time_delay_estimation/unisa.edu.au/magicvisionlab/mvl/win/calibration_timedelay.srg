@@ -68,7 +68,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="TimeDelayEstimationPosition3D"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="270 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="minSTDforMovement" value="0.05" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="minSTDforMovement" value="0.04" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="recordSize" value="3000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="sliceSize" value="2000" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="maxOffset" value="100" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
