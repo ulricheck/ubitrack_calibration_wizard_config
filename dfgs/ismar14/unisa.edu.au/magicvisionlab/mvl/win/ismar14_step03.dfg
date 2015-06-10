@@ -8,7 +8,7 @@
             <Node name="B" id="node_32">
                 <GuiPos x="541" y="529"/>
             </Node>
-            <Edge name="AB" source="A" destination="B" pattern-ref="net_phantom_fwk_pose_uncalibrated" edge-ref="Output">
+            <Edge name="AB" source="A" destination="B" pattern-ref="net_fwk_pose_uncalibrated" edge-ref="Output">
                 <GuiLandmark x="738" y="241"/>
                 <GuiLabelPos x="627" y="320"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -145,7 +145,7 @@
             <Node name="B" id="node_32">
                 <GuiPos x="541" y="529"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_fwk_pose_uncalibrated" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_fwk_pose_uncalibrated" edge-ref="Output">
                 <GuiLandmark x="1102" y="201"/>
                 <GuiLabelPos x="1115" y="253"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -200,7 +200,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="150 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_phantom_fwk_pose_uncalibrated" id="net_phantom_fwk_pose_uncalibrated">
+    <Pattern name="ZMQSourcePose" displayName="net_fwk_pose_uncalibrated" id="net_fwk_pose_uncalibrated">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_37">
                 <GuiPos x="821" y="188"/>
@@ -281,7 +281,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="150 850" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePosition" displayName="net_phantom_joint_angles" id="net_phantom_joint_angles">
+    <Pattern name="ZMQSourcePosition" displayName="net_joint_angles" id="net_joint_angles">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_37">
                 <GuiPos x="821" y="188"/>
@@ -358,7 +358,7 @@
             <Node name="B" id="node_32">
                 <GuiPos x="541" y="529"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_joint_angles" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_joint_angles" edge-ref="Output">
                 <GuiLandmark x="1285" y="260"/>
                 <GuiLabelPos x="1305" y="293"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -399,7 +399,7 @@
             <Node name="B" id="node_32">
                 <GuiPos x="541" y="529"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_fwk_pose" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_fwk_pose" edge-ref="Output">
                 <GuiLandmark x="1077" y="238"/>
                 <GuiLabelPos x="808" y="308"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -420,7 +420,7 @@
             <Node name="B" id="node_32">
                 <GuiPos x="541" y="529"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_gimbal_angles" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_gimbal_angles" edge-ref="Output">
                 <GuiLandmark x="1077" y="238"/>
                 <GuiLabelPos x="808" y="308"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -476,7 +476,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="920 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePosition" displayName="net_phantom_gimbal_angles" id="net_phantom_gimbal_angles">
+    <Pattern name="ZMQSourcePosition" displayName="net_gimbal_angles" id="net_gimbal_angles">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_37">
                 <GuiPos x="821" y="188"/>
@@ -498,7 +498,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="1150 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_phantom_fwk_pose" id="net_phantom_fwk_pose">
+    <Pattern name="ZMQSourcePose" displayName="net_fwk_pose" id="net_fwk_pose">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_37">
                 <GuiPos x="821" y="188"/>

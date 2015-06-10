@@ -13,7 +13,7 @@
             <Edge name="AB" source="A" destination="B">
                 <GuiLandmark x="738" y="241"/>
                 <GuiLabelPos x="627" y="320"/>
-                <Predicate>trackman-pattern-ref=='net_phantom_fwk_pose_uncalibrated'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='net_fwk_pose_uncalibrated'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
@@ -161,7 +161,7 @@
             <Edge name="Input" source="A" destination="B">
                 <GuiLandmark x="1102" y="201"/>
                 <GuiLabelPos x="1115" y="253"/>
-                <Predicate>trackman-pattern-ref=='net_phantom_fwk_pose_uncalibrated'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='net_fwk_pose_uncalibrated'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <Output>
@@ -214,7 +214,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_hip_target_pose" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_phantom_fwk_pose_uncalibrated">
+    <Pattern name="ZMQSourcePose" displayName="net_fwk_pose_uncalibrated">
         <Output>
             <Node name="A" id="node_37" displayName="HDorigin">
                 <GuiPos x="821" y="188"/>
@@ -238,7 +238,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="bindTo" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="fixTimestamp" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="verbose" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_phantom_fwk_pose_uncalibrated" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_fwk_pose_uncalibrated" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="ZMQSinkPose" displayName="net_calib_absolute_orientation">
@@ -300,7 +300,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_31" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePosition" displayName="net_phantom_joint_angles">
+    <Pattern name="ZMQSourcePosition" displayName="net_joint_angles">
         <Output>
             <Node name="A" id="node_37" displayName="HDorigin">
                 <GuiPos x="821" y="188"/>
@@ -320,7 +320,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="bindTo" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="fixTimestamp" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="verbose" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_phantom_joint_angles" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_joint_angles" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="3D3DPoseEstimationTime">
@@ -385,7 +385,7 @@
             <Edge name="Input" source="A" destination="B">
                 <GuiLandmark x="1285" y="260"/>
                 <GuiLabelPos x="1305" y="293"/>
-                <Predicate>trackman-pattern-ref=='net_phantom_joint_angles'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='3DPosition'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='net_joint_angles'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='3DPosition'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <DataflowConfiguration>
@@ -430,7 +430,7 @@
             <Edge name="Input" source="A" destination="B">
                 <GuiLandmark x="1077" y="238"/>
                 <GuiLabelPos x="808" y="308"/>
-                <Predicate>trackman-pattern-ref=='net_phantom_fwk_pose'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='net_fwk_pose'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='6D'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <DataflowConfiguration>
@@ -453,7 +453,7 @@
             <Edge name="Input" source="A" destination="B">
                 <GuiLandmark x="1077" y="238"/>
                 <GuiLabelPos x="808" y="308"/>
-                <Predicate>trackman-pattern-ref=='net_phantom_gimbal_angles'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='3DPosition'&amp;&amp;mode=='push'</Predicate>
+                <Predicate>trackman-pattern-ref=='net_gimbal_angles'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='3DPosition'&amp;&amp;mode=='push'</Predicate>
             </Edge>
         </Input>
         <DataflowConfiguration>
@@ -509,7 +509,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_hip_target_markers" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePosition" displayName="net_phantom_gimbal_angles">
+    <Pattern name="ZMQSourcePosition" displayName="net_gimbal_angles">
         <Output>
             <Node name="A" id="node_37" displayName="HDorigin">
                 <GuiPos x="821" y="188"/>
@@ -529,10 +529,10 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="bindTo" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="fixTimestamp" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="verbose" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_phantom_gimbal_angles" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_gimbal_angles" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_phantom_fwk_pose">
+    <Pattern name="ZMQSourcePose" displayName="net_fwk_pose">
         <Output>
             <Node name="A" id="node_37" displayName="HDorigin">
                 <GuiPos x="821" y="188"/>
@@ -552,7 +552,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="bindTo" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="fixTimestamp" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="verbose" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_phantom_fwk_pose" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="net_fwk_pose" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
     <Pattern name="PoseCalibReader">

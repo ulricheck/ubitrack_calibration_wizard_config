@@ -122,7 +122,7 @@
             <Node name="B" id="HIP">
                 <GuiPos x="697" y="692"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_joint_angles" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_joint_angles" edge-ref="Output">
                 <GuiLandmark x="945" y="148"/>
                 <GuiLabelPos x="728" y="316"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -149,7 +149,7 @@
             <Node name="EventSpace" id="node_36">
                 <GuiPos x="40" y="354"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_joint_angles" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_joint_angles" edge-ref="Output">
                 <GuiLandmark x="1151" y="271"/>
                 <GuiLabelPos x="1107" y="542"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -227,7 +227,7 @@
             <Node name="B" id="HIP">
                 <GuiPos x="697" y="692"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_fwk_pose_uncalibrated" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_fwk_pose_uncalibrated" edge-ref="Output">
                 <GuiLandmark x="911" y="128"/>
                 <GuiLabelPos x="694" y="296"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -321,7 +321,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="280 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_phantom_fwk_pose_uncalibrated" id="net_phantom_fwk_pose_uncalibrated">
+    <Pattern name="ZMQSourcePose" displayName="net_fwk_pose_uncalibrated" id="net_fwk_pose_uncalibrated">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_27">
                 <GuiPos x="1039" y="117"/>
@@ -346,7 +346,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="190 340" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePosition" displayName="net_phantom_joint_angles" id="net_phantom_joint_angles">
+    <Pattern name="ZMQSourcePosition" displayName="net_joint_angles" id="net_joint_angles">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_27">
                 <GuiPos x="1039" y="117"/>
@@ -397,7 +397,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="520 680" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSinkMatrix3x3" displayName="net_calib_phantom_jointangle_correction" id="net_calib_phantom_jointangle_correction">
+    <Pattern name="ZMQSinkMatrix3x3" displayName="net_calib_jointangle_correction" id="net_calib_jointangle_correction">
         <Input>
             <Node name="A" id="node_27">
                 <GuiPos x="1039" y="117"/>
@@ -473,7 +473,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="510 1020" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ApplicationPushSinkMatrix3x3" id="calib_phantom_jointangle_correction">
+    <Pattern name="ApplicationPushSinkMatrix3x3" id="calib_jointangle_correction">
         <Input>
             <Node name="A" id="node_27">
                 <GuiPos x="1039" y="117"/>
@@ -501,7 +501,7 @@
             <Node name="B" id="HIP">
                 <GuiPos x="697" y="692"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_fwk_pose" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_fwk_pose" edge-ref="Output">
                 <GuiLandmark x="1077" y="238"/>
                 <GuiLabelPos x="808" y="308"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="6D" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -522,7 +522,7 @@
             <Node name="B" id="HIP">
                 <GuiPos x="697" y="692"/>
             </Node>
-            <Edge name="Input" source="A" destination="B" pattern-ref="net_phantom_gimbal_angles" edge-ref="Output">
+            <Edge name="Input" source="A" destination="B" pattern-ref="net_gimbal_angles" edge-ref="Output">
                 <GuiLandmark x="1077" y="238"/>
                 <GuiLabelPos x="808" y="308"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="3DPosition" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -580,7 +580,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="750 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePosition" displayName="net_phantom_gimbal_angles" id="net_phantom_gimbal_angles">
+    <Pattern name="ZMQSourcePosition" displayName="net_gimbal_angles" id="net_gimbal_angles">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_27">
                 <GuiPos x="1039" y="117"/>
@@ -604,7 +604,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="980 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="ZMQSourcePose" displayName="net_phantom_fwk_pose" id="net_phantom_fwk_pose">
+    <Pattern name="ZMQSourcePose" displayName="net_fwk_pose" id="net_fwk_pose">
         <Output>
             <Node name="A" displayName="HDorigin" id="node_27">
                 <GuiPos x="1039" y="117"/>
