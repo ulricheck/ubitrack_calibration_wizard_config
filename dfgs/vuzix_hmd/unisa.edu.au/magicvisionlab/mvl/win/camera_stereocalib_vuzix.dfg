@@ -577,7 +577,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="720 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="MultiMarkerTrackerError" id="pattern_48">
+    <Pattern name="MultiMarkerTrackerExternalError" id="pattern_48">
         <Input>
             <Node name="Camera" id="CamLeft">
                 <GuiPos x="238" y="280"/>
@@ -629,7 +629,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="230 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="MultiMarkerTrackerError" id="pattern_49">
+    <Pattern name="MultiMarkerTrackerExternalError" id="pattern_49">
         <Input>
             <Node name="Camera" id="CamRight">
                 <GuiPos x="755" y="166"/>
