@@ -617,7 +617,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="camera_distortion_left" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="MultiMarkerTrackerError">
+    <Pattern name="MultiMarkerTrackerExternalError">
         <Input>
             <Node name="Camera">
                 <GuiPos x="238" y="280"/>
@@ -662,7 +662,7 @@
             </Edge>
         </Output>
         <DataflowConfiguration>
-            <UbitrackLib class="MultiMarkerTracker"/>
+            <UbitrackLib class="MultiMarkerTrackerExternal"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="230 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="MarkerConfig" value="H:\config\vharcalibration\calib\shared\unisa.edu.au\magicvisionlab\mvl\markertracker.conf" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="enableInnerEdgels" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -670,7 +670,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_48" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="MultiMarkerTrackerError">
+    <Pattern name="MultiMarkerTrackerExternalError">
         <Input>
             <Node name="Camera">
                 <GuiPos x="755" y="166"/>
@@ -710,7 +710,7 @@
             </Edge>
         </Output>
         <DataflowConfiguration>
-            <UbitrackLib class="MultiMarkerTracker"/>
+            <UbitrackLib class="MultiMarkerTrackerExternal"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="410 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="MarkerConfig" value="H:\config\vharcalibration\calib\shared\unisa.edu.au\magicvisionlab\mvl\markertracker.conf" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="enableInnerEdgels" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>

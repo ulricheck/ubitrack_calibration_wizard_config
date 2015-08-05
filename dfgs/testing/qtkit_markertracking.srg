@@ -5,8 +5,9 @@
             <Node name="ImagePlane" id="node_1">
                 <GuiPos x="257" y="610"/>
             </Node>
-            <Node name="Camera" id="node_2">
+            <Node name="Camera" id="node_2" displayName="Camera">
                 <GuiPos x="407" y="300"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="ColorOutput" source="Camera" destination="ImagePlane">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Image" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -29,7 +30,7 @@
             <UbitrackLib class="QTKitCapture"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="120 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="timeOffset" value="0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="cameraUUID" value="0x80430000046d081b" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="cameraUUID" value="0x14500000046d081b" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="width" value="1280" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="height" value="720" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="disableAutostart" value="false" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -38,7 +39,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_1" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="MultiMarkerTrackerError">
+    <Pattern name="MultiMarkerTrackerExternalError">
         <Input>
             <Node name="ImagePlane">
                 <GuiPos x="257" y="610"/>
@@ -76,7 +77,7 @@
             </Edge>
         </Output>
         <DataflowConfiguration>
-            <UbitrackLib class="MultiMarkerTracker"/>
+            <UbitrackLib class="MultiMarkerTrackerExternal"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="230 170" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="MarkerConfig" value="/Users/jack/mywork/phd/vhar_calibration/vharcalibration/calib/shared/net-labs.au/semaphore/jack_macbook/markertracker.conf" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="enableInnerEdgels" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -177,6 +178,50 @@
             <UbitrackLib class="ApplicationPushSinkPose"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="0 510" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="camera_pose" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+        </DataflowConfiguration>
+    </Pattern>
+    <Pattern name="ButtonOutput">
+        <Output>
+            <Node name="COS2" id="node_5">
+                <GuiPos x="56" y="393"/>
+            </Node>
+            <Node name="COS1" id="node_4">
+                <GuiPos x="96" y="193"/>
+            </Node>
+            <Node name="Camera" id="node_2">
+                <GuiPos x="407" y="300"/>
+            </Node>
+            <Edge name="Output" source="COS1" destination="COS2">
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Button" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="mode" value="push" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            </Edge>
+        </Output>
+        <DataflowConfiguration>
+            <UbitrackLib class="ButtonOutput"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="540 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_7" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+        </DataflowConfiguration>
+    </Pattern>
+    <Pattern name="ButtonPrintSink">
+        <Input>
+            <Node name="A">
+                <GuiPos x="96" y="193"/>
+                <Predicate>id=='node_4'</Predicate>
+            </Node>
+            <Node name="B">
+                <GuiPos x="56" y="393"/>
+                <Predicate>id=='node_5'</Predicate>
+            </Node>
+            <Edge name="Input" source="A" destination="B">
+                <GuiLandmark x="169" y="563"/>
+                <GuiLabelPos x="189" y="596"/>
+                <Predicate>trackman-pattern-ref=='pattern_7'&amp;&amp;trackman-edge-ref=='Output'&amp;&amp;type=='Button'&amp;&amp;mode=='push'</Predicate>
+            </Edge>
+        </Input>
+        <DataflowConfiguration>
+            <UbitrackLib class="ButtonPrintSink"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="570 150" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_8" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
 </UTQLRequest>
