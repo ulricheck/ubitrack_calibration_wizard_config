@@ -698,7 +698,7 @@
             <Node name="Marker" id="node_22" displayName="Marker">
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="DebugImage" source="Camera" destination="ImagePlane">

@@ -94,7 +94,7 @@
             <Node name="B" id="node_22">
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Node name="C" id="CamRight">
                 <GuiPos x="755" y="166"/>
@@ -131,7 +131,7 @@
             <Node name="B" id="node_22">
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="Input" source="A" destination="B" pattern-ref="pattern_52" edge-ref="Output">
                 <GuiLandmark x="739" y="247"/>
@@ -162,7 +162,7 @@
             <Node name="B" id="node_22">
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="AB" source="A" destination="B" pattern-ref="pattern_20" edge-ref="Output">
                 <GuiLandmark x="408" y="365"/>
@@ -591,7 +591,7 @@
             <Node name="B" id="node_22">
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="Input" source="A" destination="B" pattern-ref="pattern_55" edge-ref="ErrorPose">
                 <GuiLandmark x="208" y="693"/>
@@ -619,7 +619,7 @@
             <Node name="B" id="node_22">
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="Input" source="A" destination="B" pattern-ref="pattern_54" edge-ref="ErrorPose">
                 <GuiLandmark x="332" y="690"/>
@@ -665,7 +665,7 @@
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-supernode" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="DebugImage" source="Camera" destination="ImagePlane">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Image" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
@@ -712,7 +712,7 @@
             <Node name="Marker" id="node_22">
                 <GuiPos x="626" y="676"/>
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerId" value="0x5cc5" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.143" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+                <Attribute xsi:type="utql:PrimitiveAttributeType" name="markerSize" value="0.1425" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             </Node>
             <Edge name="DebugImage" source="Camera" destination="ImagePlane">
                 <Attribute xsi:type="utql:PrimitiveAttributeType" name="type" value="Image" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
