@@ -138,7 +138,7 @@
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="820 340" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
-    <Pattern name="MultiMarkerTrackerError" id="pattern_33">
+    <Pattern name="MultiMarkerTrackerExternalError" id="pattern_33">
         <Input>
             <Node name="Camera" id="Camera">
                 <GuiPos x="856" y="494"/>
@@ -178,7 +178,7 @@
             </Edge>
         </Output>
         <DataflowConfiguration>
-            <UbitrackLib class="MultiMarkerTracker"/>
+            <UbitrackLib class="MultiMarkerTrackerExternal"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="MarkerConfig" value="H:\config\vharcalibration\calib\shared\unisa.edu.au\magicvisionlab\mvl\markertracker.conf" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="enableInnerEdgels" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="enableFlipCheck" value="true" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
