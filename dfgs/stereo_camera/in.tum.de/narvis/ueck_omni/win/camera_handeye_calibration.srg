@@ -216,7 +216,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="PosePushCalibReaderWriter"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="310 1020" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck\camera_hand_eye_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck_omni\camera_hand_eye_calibration.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_40" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -511,7 +511,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="PosePushCalibReaderWriter"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="170 2040" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck\tracker_marker_transform.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck_omni\tracker_marker_transform.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_49" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -950,7 +950,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="CameraIntrinsicsCalibReader"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="360 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck\camera_left.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck_omni\camera_left.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_77" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
@@ -1018,7 +1018,7 @@
         <DataflowConfiguration>
             <UbitrackLib class="CameraIntrinsicsCalibReader"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-guipos" value="590 0" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
-            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck\camera_left.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
+            <Attribute xsi:type="utql:PrimitiveAttributeType" name="file" value="H:\config\vharcalibration\calib\stereo_camera\in.tum.de\narvis\ueck_omni\camera_left.calib" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
             <Attribute xsi:type="utql:PrimitiveAttributeType" name="trackman-pattern-id" value="pattern_79" xmlns:utql="http://ar.in.tum.de/ubitrack/utql"/>
         </DataflowConfiguration>
     </Pattern>
